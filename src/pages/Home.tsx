@@ -15,10 +15,10 @@ export function Home() {
     const provider = new firebase.auth.GoogleAuthProvider();
 
     auth.signInWithPopup(provider).then((result) => {
+      history.push('/rooms/new');
       console.log(result);
     });
 
-    // history.push('/rooms/new');
   }
 
   return (
