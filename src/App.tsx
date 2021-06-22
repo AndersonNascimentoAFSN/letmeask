@@ -1,11 +1,8 @@
-// import { Home } from "./pages/Home";
-
-import { NewRoom } from "./pages/NewRoom";
+import Routers from "./components/Routers";
 
 function App() {
   return (
-    // <Home />
-    <NewRoom />
+    <Routers />
   );
 }
 
