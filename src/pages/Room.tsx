@@ -60,7 +60,7 @@ export function Room() {
         setTitle(databaseRoom.title);
         setQuestions(parsedQuestions);
     });
-  }, [roomId])
+  }, [roomId, newQuestion])
   
   async function handleSendQuestion(event: FormEvent) {
     event.preventDefault();
