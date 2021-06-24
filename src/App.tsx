@@ -1,6 +1,12 @@
+import Routers from "./components/Routers";
+
+import { AuthContextProvider } from './contexts/AuthContext';
+
 function App() {
   return (
-    <h1>Hello World</h1>
+    <AuthContextProvider>
+      <Routers />
+    </AuthContextProvider>
   );
 }
 
